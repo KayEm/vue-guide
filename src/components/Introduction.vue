@@ -79,13 +79,6 @@ Vue.component('todo-item', {
 </script>
 
 <style scoped>
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: minmax(100px, auto);
-}
 .h2-1 {
   grid-column: 1;
   grid-row: 1;

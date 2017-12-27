@@ -4,7 +4,7 @@
     <ul class="horizontal">
       <li class="horizontal"><router-link to="/">Home</router-link></li>
       <li class="horizontal"><router-link to="/Introduction">Introduction</router-link></li>
-      <li class="horizontal"><router-link to="/Advanced">Advanced features</router-link></li>
+      <li class="horizontal"><router-link to="/Essentials">Essentials</router-link></li>
     </ul>
     <router-view/>
   </div>

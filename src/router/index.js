@@ -5,6 +5,7 @@ import Introduction from '@/components/Introduction'
 import Template from '@/components/Template'
 import PropsWatchers from '@/components/PropsWatchers'
 import ClassStyleBindings from '@/components/ClassStyleBindings'
+import ConditionalRendering from '@/components/ConditionalRendering'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/classstylebindings',
       name: 'ClassStyleBindings',
       component: ClassStyleBindings
+    },
+    {
+      path: '/conditionalrendering',
+      name: 'ConditionalRendering',
+      component: ConditionalRendering
     }
   ]
 })

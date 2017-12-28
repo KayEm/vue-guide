@@ -2,8 +2,9 @@
     <div>
         <h1>Class and Style Bindings</h1>
         <div class="container">
-            <div>
-                <h2>Binding HTML classes</h2>
+            <div class="card">
+              <h2 class="card-header">Binding HTML classes</h2>
+              <div class="card-body">
                 <div v-bind:class="{ active: isActive }">v-bind:class to dynamically toggle classes</div>
                 <div class="static" v-bind:class="{ active: isActive, 'text-danger': hasError }">
                     v-bind:class directive can also co-exist with the plain class attribute
@@ -13,13 +14,16 @@
                 <div v-bind:class="[activeClass, errorClass]">Pass an array to v-bind:class to apply a list of classes</div>
                 <div v-bind:class="[isActive ? activeClass : '', errorClass]">Toggle a class in the list conditionally</div>
                 <div v-bind:class="[{ active: isActive }, errorClass]">Use the object syntax inside array syntax</div>
+              </div>
             </div>
-            <div>
-                <h2>Binding inline styles</h2>
+            <div class="card">
+              <h2 class="card-header">Binding inline styles</h2>
+              <div class="card-body">
                 <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }">v-bind:style</div>
                 <div v-bind:style="styleObject">Bind to a style object directly</div>
                 <div v-bind:style="[baseStyles, overridingStyles]">Apply multiple style objects to the same element with array syntax</div>
                 <div v-bind:style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }">Provide an array of multiple (prefixed) values to a style property</div>
+              </div>
             </div>
         </div>    
     </div>

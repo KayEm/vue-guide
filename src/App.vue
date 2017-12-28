@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <ul class="horizontal">
-      <li class="horizontal"><router-link to="/">Home</router-link></li>
-      <li class="horizontal"><router-link to="/Introduction">Introduction</router-link></li>
-      <li class="horizontal"><router-link to="/Template">Template syntax</router-link></li>
-      <li class="horizontal"><router-link to="/PropsWatchers">Computed properties and Watchers</router-link></li>
-      <li class="horizontal"><router-link to="/ClassStyleBindings">Class and style bindings</router-link></li>
-      <li class="horizontal"><router-link to="/ConditionalRendering">Conditional rendering</router-link></li>
-      <li class="horizontal"><router-link to="/ListRendering">List rendering</router-link></li>
-      <li class="horizontal"><router-link to="/EventHandling">Event handling</router-link></li>
-      <li class="horizontal"><router-link to="/FormInputBindings">Form input bindings</router-link></li>
+    <router-link class="nav-link" to="/"><img src="./assets/logo.png"></router-link>
+    <ul class="nav nav-fill flex-column flex-sm-row">
+      <li class="nav-item"><router-link class="nav-link" to="/Introduction">Introduction</router-link></li>
+      <li class="nav-item"><router-link class="nav-link" to="/Template">Template syntax</router-link></li>
+      <li class="nav-item"><router-link class="nav-link" to="/PropsWatchers">Computed properties & watchers</router-link></li>
+      <li class="nav-item"><router-link class="nav-link" to="/ClassStyleBindings">Class & style bindings</router-link></li>
+      <li class="nav-item"><router-link class="nav-link" to="/ConditionalRendering">Conditional rendering</router-link></li>
+      <li class="nav-item"><router-link class="nav-link" to="/ListRendering">List rendering</router-link></li>
+      <li class="nav-item"><router-link class="nav-link" to="/EventHandling">Event handling</router-link></li>
+      <li class="nav-item"><router-link class="nav-link" to="/FormInputBindings">Form input bindings</router-link></li>
     </ul>
     <router-view/>
   </div>
@@ -31,18 +30,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-h1, h2, h3, h4 {
-  font-weight: normal;
-}
-ul.horizontal {
-  list-style-type: none;
-  padding: 0;
-}
-li.horizontal {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
+a, a:hover {
   color: #42b983;
 }
 .container {

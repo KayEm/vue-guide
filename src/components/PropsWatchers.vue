@@ -2,18 +2,22 @@
     <div>
         <h1>Computed properties and Watchers</h1>
         <div class="container">
-          <div>
-            <h2>Computed properties</h2>
-            <div>In-template expression: {{ message.split('').reverse().join('') }}</div>   
-            <div>Original message: "{{ message }}"</div>
-            <div>Computed reversed message, computed properties are cached based on their dependencies: "{{ reversedMessage }}"</div>  
-            <div>Reversed message by invoking a method, a method invocation will always run the function on re-render: "{{ reverseMessage() }}"</div>       
-            <div>Use a computed property rather than an imperative watch callback: {{ fullName }}</div>
-            <div>Computed properties are by default getter-only, but you can also provide a setter: {{ fullNameWithSetter }}</div>
+          <div class="card">
+            <h2 class="card-header">Computed properties</h2>
+            <div class="card-body">
+              <div>In-template expression: {{ message.split('').reverse().join('') }}</div>   
+              <div>Original message: "{{ message }}"</div>
+              <div>Computed reversed message, computed properties are cached based on their dependencies: "{{ reversedMessage }}"</div>  
+              <div>Reversed message by invoking a method, a method invocation will always run the function on re-render: "{{ reverseMessage() }}"</div>       
+              <div>Use a computed property rather than an imperative watch callback: {{ fullName }}</div>
+              <div>Computed properties are by default getter-only, but you can also provide a setter: {{ fullNameWithSetter }}</div>
+            </div>
           </div>
-          <div>
-            <h2>Watchers</h2>
-            <div>Yes/no question using Watchers with Axois and Lodash:<p><input v-model="question"> {{ answer }}</p></div>
+          <div class="card">
+            <h2 class="card-header">Watchers</h2>
+            <div class="card-body">
+              <div>Yes/no question using Watchers with Axois and Lodash:<p><input class="form-control" v-model="question"> {{ answer }}</p></div>
+            </div>
           </div>
       </div>
     </div>  

@@ -6,6 +6,7 @@ import Template from '@/components/Template'
 import PropsWatchers from '@/components/PropsWatchers'
 import ClassStyleBindings from '@/components/ClassStyleBindings'
 import ConditionalRendering from '@/components/ConditionalRendering'
+import ListRendering from '@/components/ListRendering'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/conditionalrendering',
       name: 'ConditionalRendering',
       component: ConditionalRendering
+    },
+    {
+      path: '/listrendering',
+      name: 'ListRendering',
+      component: ListRendering
     }
   ]
 })

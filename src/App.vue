@@ -8,6 +8,7 @@
       <li class="horizontal"><router-link to="/PropsWatchers">Computed properties and Watchers</router-link></li>
       <li class="horizontal"><router-link to="/ClassStyleBindings">Class and style bindings</router-link></li>
       <li class="horizontal"><router-link to="/ConditionalRendering">Conditional rendering</router-link></li>
+      <li class="horizontal"><router-link to="/ListRendering">List rendering</router-link></li>
     </ul>
     <router-view/>
   </div>

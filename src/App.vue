@@ -9,6 +9,7 @@
       <li class="horizontal"><router-link to="/ClassStyleBindings">Class and style bindings</router-link></li>
       <li class="horizontal"><router-link to="/ConditionalRendering">Conditional rendering</router-link></li>
       <li class="horizontal"><router-link to="/ListRendering">List rendering</router-link></li>
+      <li class="horizontal"><router-link to="/EventHandling">Event handling</router-link></li>
     </ul>
     <router-view/>
   </div>
@@ -29,7 +30,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: normal;
 }
 ul.horizontal {

@@ -7,6 +7,7 @@ import PropsWatchers from '@/components/PropsWatchers'
 import ClassStyleBindings from '@/components/ClassStyleBindings'
 import ConditionalRendering from '@/components/ConditionalRendering'
 import ListRendering from '@/components/ListRendering'
+import EventHandling from '@/components/EventHandling'
 
 Vue.use(Router)
 
@@ -46,6 +47,11 @@ export default new Router({
       path: '/listrendering',
       name: 'ListRendering',
       component: ListRendering
+    },
+    {
+      path: '/eventhandling',
+      name: 'EventHandling',
+      component: EventHandling
     }
   ]
 })

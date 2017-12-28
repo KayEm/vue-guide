@@ -4,7 +4,9 @@
     <ul class="horizontal">
       <li class="horizontal"><router-link to="/">Home</router-link></li>
       <li class="horizontal"><router-link to="/Introduction">Introduction</router-link></li>
-      <li class="horizontal"><router-link to="/Essentials">Essentials</router-link></li>
+      <li class="horizontal"><router-link to="/Template">Template syntax</router-link></li>
+      <li class="horizontal"><router-link to="/PropsWatchers">Computed properties and Watchers</router-link></li>
+      <li class="horizontal"><router-link to="/ClassStyleBindings">Class and style bindings</router-link></li>
     </ul>
     <router-view/>
   </div>
@@ -25,7 +27,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-h1, h2 {
+h1, h2, h3 {
   font-weight: normal;
 }
 ul.horizontal {

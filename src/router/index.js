@@ -2,7 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Introduction from '@/components/Introduction'
-import Essentials from '@/components/Essentials'
+import Template from '@/components/Template'
+import PropsWatchers from '@/components/PropsWatchers'
+import ClassStyleBindings from '@/components/ClassStyleBindings'
 
 Vue.use(Router)
 
@@ -19,9 +21,19 @@ export default new Router({
       component: Introduction
     },
     {
-      path: '/essentials',
-      name: 'Essentials',
-      component: Essentials
+      path: '/template',
+      name: 'Template',
+      component: Template
+    },
+    {
+      path: '/propswatchers',
+      name: 'PropsWatchers',
+      component: PropsWatchers
+    },
+    {
+      path: '/classstylebindings',
+      name: 'ClassStyleBindings',
+      component: ClassStyleBindings
     }
   ]
 })

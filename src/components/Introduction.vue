@@ -1,37 +1,42 @@
 <template>
-    <div id="app-0" class="container">
-        <h2 class="h2-1">Declarative rendering</h2>
-        <div class="app-1">
-            {{message}}
-        </div>
-        <div class="app-2">
+    <div class="container">
+      <div>
+        <h1>Declarative rendering</h1>
+        <div>{{message}}</div>
+        <div>
             <span v-bind:title="message2">
-                Hover your mouse over me for a few seconds
-                to see my dynamically bound title!
+              Hover your mouse over me for a few seconds
+              to see my dynamically bound title!
             </span>
         </div>
-        <h2 class="h2-2">Conditionals and Loops</h2>
-        <div class="app-3">
-            <span v-if="seen">Now you see me</span>
+      </div>
+      <div>
+        <h1>Conditionals and Loops</h1>
+        <div>
+          <span v-if="seen">Now you see me</span>
         </div>
-        <div class="app-4">
+        <div>
             <ol>
                 <li v-for="todo in todos">
-                    {{ todo.text }}
+                  {{ todo.text }}
                 </li>
             </ol>
         </div>
-        <h2 class="h2-3">Handling user input</h2>
-        <div class="app-5">
+      </div>
+      <div>
+        <h1>Handling user input</h1>
+        <div>
             <p>{{message}}</p>
             <button v-on:click="reverseMessage">Reverse message</button>
         </div>
-        <div class="app-6">
+        <div>
             <p>{{message}}</p>
             <input v-model="message" />
         </div>
-        <h2 class="h2-4">Composing with components</h2>
-        <div class="app-7">
+      </div>
+      <div>
+        <h1>Composing with components</h1>
+        <div>
             <ol>
                 <todo-item
                     v-for="item in groceryList"
@@ -40,6 +45,7 @@
                 </todo-item>
             </ol>
         </div>
+      </div>
     </div>
 </template>
 
@@ -79,48 +85,5 @@ Vue.component('todo-item', {
 </script>
 
 <style scoped>
-.h2-1 {
-  grid-column: 1;
-  grid-row: 1;
-}
-.app-1 {
-  grid-column: 1;
-  grid-row: 2;
-}
-.app-2 { 
-  grid-column: 1;
-  grid-row: 3;
-}
-.h2-2 {
-  grid-column: 2;
-  grid-row: 1;    
-}
-.app-3 {
-  grid-column: 2;
-  grid-row: 2;
-}
-.app-4 {
-  grid-column: 2;
-  grid-row: 3;
-}
-.h2-3 {
-  grid-column: 1;
-  grid-row: 4;
-}
-.app-5 { 
-  grid-column: 1;
-  grid-row: 5;
-}
-.app-6 {
-  grid-column: 1;
-  grid-row: 6;
-}
-.h2-4 {
-  grid-column: 2;
-  grid-row: 4;
-}
-.app-7 {
-  grid-column: 2;
-  grid-row: 5;
-}
+
 </style>

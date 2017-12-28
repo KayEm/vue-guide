@@ -10,6 +10,7 @@
       <li class="horizontal"><router-link to="/ConditionalRendering">Conditional rendering</router-link></li>
       <li class="horizontal"><router-link to="/ListRendering">List rendering</router-link></li>
       <li class="horizontal"><router-link to="/EventHandling">Event handling</router-link></li>
+      <li class="horizontal"><router-link to="/FormInputBindings">Form input bindings</router-link></li>
     </ul>
     <router-view/>
   </div>

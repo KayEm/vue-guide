@@ -8,6 +8,7 @@ import ClassStyleBindings from '@/components/ClassStyleBindings'
 import ConditionalRendering from '@/components/ConditionalRendering'
 import ListRendering from '@/components/ListRendering'
 import EventHandling from '@/components/EventHandling'
+import FormInputBindings from '@/components/FormInputBindings'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/eventhandling',
       name: 'EventHandling',
       component: EventHandling
+    },
+    {
+      path: '/forminputbindings',
+      name: 'FormInputBindings',
+      component: FormInputBindings
     }
   ]
 })
